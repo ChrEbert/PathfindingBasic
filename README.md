@@ -21,8 +21,12 @@ It is a multidimensional array. If a crossing point is reached, there can be mun
 
 
 
-- __Visualisation the movement of the robot:__ Using a timespan for each point of the path from current point to target point.
+## Visualisation the movement of the robot: 
 
-##Design / Initialisation
+If the points of the route from current to target position, these are saved in the array _lineup_ at the end of the _pathgenerate_ function. For the display an Interval of one second is generated, _locateRobot_ is placing the robot in the grid using the setted field size and the DOM-Model. If the last = target point is reached, the interval terminates.
+
+## Design / Initialisation
+
+It is possible to generate the target point by random or by selection by clicking the concerning buttons. The dropdown list is generated dynamically by all buildingnames in a sorted manner. It is also possible to terminate the robot and get another target by clicking on the _terminate_ button. Note also, that the current coordinates and the target is displayed on each move of the robot, using Dom / innerText.
 
 
