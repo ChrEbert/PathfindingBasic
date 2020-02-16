@@ -3,6 +3,6 @@ This is a very basic pathfinding game algorithm in Javascript, visualized in a 2
 
 For describing the project there are 3 sections:
 - __Design / Initialisation:__ Further informations how the city, it's buildings streets and "empty" fields are displayed, which technologies are used to achieve this, and how the robot is shown.
-- Pathgenerating: This is the core point of the script: How is the way from the current to the target point determined. How it is saved for the visualisation of the movement of the robot?
-- Visualisation the movement of the robot: Using a timespan for each point of the path from current point to target point.
+- __Pathgenerating:__ This is the core point of the script: How is the way from the current to the target point determined. How it is saved for the visualisation of the movement of the robot?
+- __Visualisation the movement of the robot:__ Using a timespan for each point of the path from current point to target point.
 
