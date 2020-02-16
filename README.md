@@ -3,7 +3,9 @@ This is a very basic pathfinding game algorithm in __Javascript__, visualized in
 
 For describing the project there are 3 sections:
 - <strong>__Design / Initialisation:__</strong> 
+
 __City Display:__ 
+
 The whole city is displayed in a "chessboard", 2 dimensional view. The city is defined in a object array _citygrid_.All buildings, streets and empty places are saved in this array, the arrayposition is also the position where this item are in the city. For example the item _citygrid[1][2]_ represents the point x=2 and y=3.  The display of the array is realized with the __DOM__ and __CSS__. Fieldsizes, backgroundcolors are defined, the empty places are  shown in a "Wood"(green) or "Clear"(brown) using a Randomselection in Javascript. If the arrays are changed, also other Cities are possible to display. It is also possible to use bigger city sizes (not tested) by changing the arrays - currently a 8x8 size is used. In a separate array _streetgrid_ all items of _citygrid_ are saved, that have the attribute="street" are saved. As written before with the attributes _x_ and _y_ also the coordinates of all streets are saved in this array. For the first robot position,is determined by a random selection over all the street coordinates. Variables: _cur_x_robot_ and _cur_y_robot_. The code for the description can be found at the beginning of the script Line 42 and the function _loadfields()_ , which is executed after the html-file /site has been loaded completely (onload-Handler HTML body tag).
 - __Pathgenerating:__ This is the core point of the script: How is the way from the current to the target point determined. How it is saved for the visualisation of the movement of the robot?
 - __Visualisation the movement of the robot:__ Using a timespan for each point of the path from current point to target point.
